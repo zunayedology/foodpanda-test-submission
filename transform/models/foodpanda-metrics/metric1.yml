@@ -1,0 +1,12 @@
+models:
+  - name: metric1
+    description: >
+      Answer of the first metric of Case Study 1.
+      Calculates the total number of successful orders per day.
+    meta:
+      owner: candidate@foodpanda.com
+    columns:
+      - name: date_local
+        description: The local date when the order was placed
+      - name: total_successful_orders
+        description: The total number of successful orders on that day
