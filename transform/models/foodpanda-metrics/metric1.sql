@@ -1,6 +1,6 @@
 {{ config(materialized = "view") }}
 
-WITH successful_orders AS (
+WITH successful_orders_per_day AS (
    SELECT
        date_local,
        COUNT(*) AS total_successful_orders
@@ -9,4 +9,4 @@ WITH successful_orders AS (
    GROUP BY date_local
 )
 
-SELECT * FROM successful_orders;
+SELECT * FROM successful_orders_per_day;
