@@ -1,6 +1,7 @@
 {{ config(materialized = "view") }}
 
-WITH min_one_successful_order_customers AS (
+WITH
+    min_one_successful_order_customers AS (
     SELECT
         COUNT(DISTINCT customer_id) AS total_customers
     FROM {{ ref("orders") }}
