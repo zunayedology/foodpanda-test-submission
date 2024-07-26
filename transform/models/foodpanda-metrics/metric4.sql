@@ -10,6 +10,7 @@ WITH
             {{ ref("orders") }},
             UNNEST(SPLIT(product_id, ",")) AS products
     ),
+
     ordered_products AS (
         SELECT
             date_local,

@@ -9,12 +9,14 @@ WITH
         WHERE
             is_successful_order = TRUE
     ),
+
     last_order_date AS (
         SELECT
             MAX(date_local) AS last_date
         FROM
             customer_orders
     ),
+
     customer_with_prev_orders AS (
         SELECT
             DISTINCT customer_id
@@ -26,6 +28,7 @@ WITH
                     INTERVAL 7 DAY
                 )
     ),
+
     reordering_customers AS (
         SELECT
             DISTINCT customer_id
