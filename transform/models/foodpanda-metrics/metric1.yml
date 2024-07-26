@@ -1,7 +1,7 @@
 models:
   - name: metric1
     description: >
-      Answer to the first metric of Case Study 1 of the foodpanda take-home assessment.
+      Answer to the 1st metric of Case Study 1 of the take-home assessment.
       Calculates the total number of successful orders per day.
     meta:
       owner: candidate@foodpanda.com

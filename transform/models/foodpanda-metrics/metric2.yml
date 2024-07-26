@@ -1,7 +1,7 @@
 models:
   - name: metric2
     description: >
-      Answer to the second metric of Case Study 1 of the foodpanda take-home assessment.
+      Answer to the 2nd metric of Case Study 1 of the take-home assessment.
       Calculates the number of customers who have placed at least 1 successful order.
     meta:
       owner: candidate@foodpanda.com
