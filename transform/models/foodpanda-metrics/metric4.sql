@@ -25,7 +25,7 @@ WITH
 
 SELECT
     date_local,
-    ROUND(AVG(total_prodtcs), 2) AS avg_product_per_order_day
+    ROUND(AVG(total_products), 2) AS avg_product_per_order_day
 FROM
     ordered_products
 GROUP BY

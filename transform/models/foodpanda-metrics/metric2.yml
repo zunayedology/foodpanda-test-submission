@@ -6,5 +6,5 @@ models:
     meta:
       owner: candidate@foodpanda.com
     columns:
-      - name: min_one_successful_order_customers
+      - name: customers_with_min_one_successful_order
         description: The number of customers who have placed at least 1 successful order.

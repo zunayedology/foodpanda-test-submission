@@ -17,7 +17,7 @@ WITH
             customer_orders
     ),
 
-    customer_with_prev_orders AS (
+    customers_with_prev_orders AS (
         SELECT
             DISTINCT customer_id
         FROM
@@ -45,5 +45,5 @@ SELECT
     COUNT(DISTINCT reordering_customers.customer_id) AS total_reordering_customers
 FROM
     reordering_customers
-JOIN customer_with_prev_orders
-    ON reordering_customers.customer_id = customer_with_prev_orders.customer_id;
+JOIN customers_with_prev_orders
+    ON reordering_customers.customer_id = customers_with_prev_orders.customer_id;
