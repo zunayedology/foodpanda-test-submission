@@ -1,0 +1,16 @@
+models:
+  - name: metric3
+    description: >
+      Answer to the 3rd metric of Case Study 1 of the take-home assessment.
+      Calculates the total number of successful orders per restaurant per day.
+    meta:
+      owner: candidate@foodpanda.com
+    columns:
+      - name: date_local
+        description: The local date of the order.
+      - name: restaurant_id
+        description: The ID of the restaurant.
+      - name: restaurant_name
+        description: The name of the restaurant.
+      - name: total_successful_orders
+        description: The total number of successful orders for that restaurant on that day.

@@ -1,0 +1,12 @@
+models:
+  - name: metric4
+    description: >
+      Answer to the 4th metric of Case Study 1 of the take-home assessment.
+      Calculates the average number of products ordered per order per day.
+    meta:
+      owner: candidate@foodpanda.com
+    columns:
+      - name: date_local
+        description: The local date of the order.
+      - name: avg_product_per_order_day
+        description: The average number of products ordered per order on that day.
